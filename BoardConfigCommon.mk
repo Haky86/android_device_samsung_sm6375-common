@@ -169,5 +169,9 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Ramdisk
 BOARD_RAMDISK_USE_LZ4 := true
 
+# Recovery
+TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := false
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
