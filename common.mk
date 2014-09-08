@@ -11,6 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # AAPT
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Android Verified Boot
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
