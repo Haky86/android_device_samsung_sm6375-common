@@ -8,6 +8,9 @@ COMMON_PATH := device/samsung/sm6375-common
 # 64 Bit
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
+# AAPT
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
