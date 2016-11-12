@@ -45,5 +45,8 @@ AUDIOSERVER_MULTILIB := 32
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
+# Bootanimation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
