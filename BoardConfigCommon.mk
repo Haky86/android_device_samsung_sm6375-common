@@ -57,5 +57,8 @@ TARGET_NO_RPC := true
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+# FSConfig
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
