@@ -69,6 +69,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(COMMON_PATH)
+
 # Telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
