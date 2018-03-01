@@ -65,6 +65,10 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 # Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
+
 # Telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
