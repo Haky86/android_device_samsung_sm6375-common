@@ -101,6 +101,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayCommon \
     FrameworkResOverlayCommon \
     SettingsProviderOverlayCommon \
+    SystemUIOverlayCommon \
     TelecommOverlayCommon \
     TelephonyOverlayCommon \
     WifiResourcesOverlayCommon
