@@ -100,6 +100,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCommon \
     FrameworkResOverlayCommon \
+    SettingsLibOverlayCommon \
     SettingsProviderOverlayCommon \
     SystemUIOverlayCommon \
     TelecommOverlayCommon \
