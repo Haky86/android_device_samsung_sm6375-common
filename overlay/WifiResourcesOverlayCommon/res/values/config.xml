@@ -27,6 +27,12 @@
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
+    <!-- True if the firmware supports connected MAC randomization -->
+    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
+
+    <!-- True if the firmware supports p2p MAC randomization -->
+    <bool name="config_wifi_p2p_mac_randomization_supported">true</bool>
+
     <!-- Enable ACS (auto channel selection) for softap -->
     <bool translatable="false" name="config_wifi_softap_acs_supported">false</bool>
 
