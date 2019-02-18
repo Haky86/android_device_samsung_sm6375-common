@@ -135,6 +135,9 @@
             </routes>
         </module>
 
+        <!-- Bluetooth Audio HAL for Hearing aid -->
+        <xi:include href="/vendor/etc/hearing_aid_audio_policy_configuration.xml"/>
+
         <!-- Remote Submix Audio HAL -->
         <xi:include href="/vendor/etc/r_submix_audio_policy_configuration.xml"/>
 
