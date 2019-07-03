@@ -1,2 +1,5 @@
 # eBPF
 ro.bpf.kver_override=5.10.239
+
+# QC Value Addons
+ro.vendor.qti.va_odm.support=1
