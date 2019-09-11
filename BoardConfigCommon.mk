@@ -118,7 +118,7 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.l
 TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
 # Libinit
-TARGET_INIT_VENDOR_LIB := libinit_sec
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_sec
 
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
