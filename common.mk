@@ -106,8 +106,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayCommon \
     SystemUIOverlayCommon \
     TelecommOverlayCommon \
-    TelephonyOverlayCommon \
-    WifiResourcesOverlayCommon
+    TelephonyOverlayCommon
 
 # Partitions
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
