@@ -1558,7 +1558,6 @@ vendor/lib/libqcbor.so
 vendor/lib/libqrtr.so
 vendor/lib/libqrtrclient.so
 vendor/lib/libqsocket.so
-vendor/lib/librmnetctl.so
 vendor/lib/libstork_shared.so
 vendor/lib/libxml.so
 vendor/lib64/libSemDataProps.so
@@ -1581,7 +1580,6 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqrtrclient.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril_sem.so
-vendor/lib64/librmnetctl.so
 vendor/lib64/librmsclib1.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsecril-client.so
