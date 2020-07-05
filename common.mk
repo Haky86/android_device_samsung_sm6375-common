@@ -1,0 +1,12 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+COMMON_PATH := device/samsung/sm6375-common
+
+# 64 Bit
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
+# Telephony
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
