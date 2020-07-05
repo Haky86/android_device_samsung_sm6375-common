@@ -10,3 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/samsung/sm6375-common/sm6375-common-vendor.mk)
