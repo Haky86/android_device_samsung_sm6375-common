@@ -115,6 +115,7 @@ TARGET_KERNEL_VERSION := 5.4
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
