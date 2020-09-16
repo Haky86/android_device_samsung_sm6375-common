@@ -21,9 +21,7 @@
 #define BUILD_NAME_LEN 8
 #define CODENAME_LEN   9
 
-using android::init::property_set;
-
-static void property_set(char const prop[], char const value[]) {
+static void property_override(char const prop[], char const value[]) {
     prop_info *pi;
 
     pi = (prop_info*) __system_property_find(prop);
@@ -33,10 +31,10 @@ static void property_set(char const prop[], char const value[]) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void property_set_dual(char const system_prop[], char const vendor_prop[], char const value[])
+void property_override_dual(char const system_prop[], char const vendor_prop[], char const value[])
 {
-    property_set(system_prop, value);
-    property_set(vendor_prop, value);
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
 }
 
 void vendor_load_properties()
@@ -72,8 +70,8 @@ void vendor_load_properties()
     LOG(INFO) << "Setting ro.product.name: %s", name.c_str();
     LOG(INFO) << "Setting ro.build.product: %s", device.c_str();
 
-    property_set_dual("ro.product.model", "ro.vendor.product.model", model.c_str());
-    property_set_dual("ro.product.device", "ro.vendor.product.device", device.c_str());
-    property_set_dual("ro.product.name", "ro.vendor.product.name", name.c_str());
-    property_set("ro.build.product", device.c_str());
+    property_override_dual("ro.product.model", "ro.vendor.product.model", model.c_str());
+    property_override_dual("ro.product.device", "ro.vendor.product.device", device.c_str());
+    property_override_dual("ro.product.name", "ro.vendor.product.name", name.c_str());
+    property_override("ro.build.product", device.c_str());
 }
