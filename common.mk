@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
 
 TARGET_BOARD_FASTBOOT_INFO_FILE := $(COMMON_PATH)/fastboot-info.txt
 
+# FM
+BOARD_HAVE_QCOM_FM := false
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
