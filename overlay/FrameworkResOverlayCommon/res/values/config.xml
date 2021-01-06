@@ -116,6 +116,14 @@
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
 
+    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
+     when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
+     where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
+     and Strength as defined in Authenticators.java -->
+    <string-array name="config_biometric_sensors" translatable="false" >
+        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
+    </string-array>
+
     <!-- Note: This config is deprecated, use BluetoothProperties instead.
          Idle current for bluetooth controller. 0 by default
     -->
