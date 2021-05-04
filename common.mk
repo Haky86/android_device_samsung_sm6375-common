@@ -27,6 +27,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Data Services
 $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
 
+# DebugFS
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
