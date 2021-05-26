@@ -114,6 +114,7 @@ prebuilt_etc {
     filename: "ueventd.rc",
     name: "ueventd.qcom.rc",
     src: "etc/ueventd.qcom.rc",
+    vendor: true,
 }
 
 prebuilt_etc {
