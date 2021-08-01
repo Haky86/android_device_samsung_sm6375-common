@@ -155,5 +155,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Partitions Reserved
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := holi
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
