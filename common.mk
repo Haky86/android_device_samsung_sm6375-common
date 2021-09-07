@@ -68,7 +68,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot.sh \
     init.kernel.post_boot-blair.sh \
     init.kernel.post_boot-holi.sh \
-    init.qcom.class_core.sh \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
