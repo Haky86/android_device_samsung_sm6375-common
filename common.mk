@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
     init.qcom.sdio.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
