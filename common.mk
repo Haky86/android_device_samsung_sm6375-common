@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     LineagePartsOverlayCommon \
     LineageSDKOverlayCommon \
     SettingsLibOverlayCommon \
+    SettingsOverlayCommon \
     SettingsProviderOverlayCommon \
     SystemUIOverlayCommon \
     TelecommOverlayCommon \
