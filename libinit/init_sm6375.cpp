@@ -15,7 +15,7 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-#include "init_sec.h"
+#include "init_sm6375.h"
 
 #define MODEL_NAME_LEN 5
 #define BUILD_NAME_LEN 8

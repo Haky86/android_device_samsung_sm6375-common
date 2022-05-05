@@ -56,4 +56,4 @@ static const variant *all_variants[VARIANT_MAX] = {
     &latino_models_a23xq,
 };
 
-#endif // INIT_SEC_H
+#endif // INIT_SM6375_H
