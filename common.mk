@@ -79,6 +79,8 @@ PRODUCT_PACKAGES += \
     tinypcminfo \
     tinyplay
 
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Audio (DAP)
 PRODUCT_PACKAGES += \
     SamsungDAP
