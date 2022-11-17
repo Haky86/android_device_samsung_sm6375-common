@@ -51,6 +51,7 @@ PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
+    init.qti.display_boot.rc \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.samsung.power.rc \
@@ -74,6 +75,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sdio.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
+    init.qti.display_boot.sh \
     init.qti.early_init.sh \
     init.qti.kernel.debug.sh \
     init.qti.kernel.debug-blair.sh \
