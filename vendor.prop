@@ -73,6 +73,9 @@ vendor.audio.feature.snd_mon.enable=true
 vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.usb_offload.enable=true
 
+# Bluetooth Address
+ro.vendor.bt.bdaddr_path=/mnt/vendor/efs/bluetooth/bt_addr
+
 # Bluetooth Class
 bluetooth.device.class_of_device=90,2,12
 
