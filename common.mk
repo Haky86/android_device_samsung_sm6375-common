@@ -62,6 +62,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # QMI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
+# Ramdisk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
