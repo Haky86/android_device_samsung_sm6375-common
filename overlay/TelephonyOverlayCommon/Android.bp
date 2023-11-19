@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "TelephonyOverlayCommon",
-    product_specific: true,
+    vendor: true,
 }

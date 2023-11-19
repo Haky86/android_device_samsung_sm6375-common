@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "LineagePartsOverlayCommon",
-    product_specific: true,
+    vendor: true,
 }
