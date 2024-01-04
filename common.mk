@@ -98,7 +98,6 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayCommon \
     FrameworkResOverlayCommon \
     FrameworkResOverlaySamsung \
     LineageDialerOverlayCommon \
