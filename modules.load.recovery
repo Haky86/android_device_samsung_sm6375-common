@@ -1,0 +1,8 @@
+lxs_ts.ko
+novatek_ts_nt36523.ko
+ovt_td4150_spi.ko
+sec_cmd.ko
+sec_common_fn.ko
+sec_secure_touch.ko
+sec_tsp_dumpkey.ko
+sec_tsp_log.ko
