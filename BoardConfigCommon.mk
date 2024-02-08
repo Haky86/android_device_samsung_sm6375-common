@@ -209,7 +209,7 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/vintf/manifest.xml
     
 DEVICE_MATRIX_FILE := \
-    $(COMMON_PATH)/vintf/compatibility_matrix.xml
+    hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
