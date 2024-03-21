@@ -37,6 +37,8 @@ $(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,true)
 PRODUCT_PACKAGES += \
     fastbootd
 
+TARGET_BOARD_FASTBOOT_INFO_FILE := $(COMMON_PATH)/fastboot-info.txt
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
