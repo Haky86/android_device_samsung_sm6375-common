@@ -39,7 +39,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl \
+    android.hardware.audio@6.0-impl.samsung-sm6375 \
     android.hardware.audio.common-util.vendor \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
