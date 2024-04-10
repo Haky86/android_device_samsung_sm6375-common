@@ -189,5 +189,10 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Rootfs
+BOARD_ROOT_EXTRA_FOLDERS := \
+    efs \
+    metadata
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
