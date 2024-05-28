@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
     tinypcminfo \
     tinyplay
 
+# Audio (DAP)
+PRODUCT_PACKAGES += \
+    SamsungDAP
+
 # Audio (SoundTrigger)
 PRODUCT_PACKAGES += \
     sound_trigger.primary.holi:32
