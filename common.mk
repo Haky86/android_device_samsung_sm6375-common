@@ -42,6 +42,9 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(COMMON_PATH)/fastboot-info.txt
 # HWUI
 TARGET_USES_VULKAN := true
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := false
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
