@@ -49,6 +49,8 @@ PRODUCT_ENABLE_UFFD_GC := false
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
 # Partitions
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Telephony
