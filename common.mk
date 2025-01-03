@@ -75,6 +75,9 @@ PRODUCT_SOONG_NAMESPACES += \
     bootable/deprecated-ota \
     hardware/samsung
 
+# Storages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
