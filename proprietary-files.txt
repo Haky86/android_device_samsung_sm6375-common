@@ -1706,6 +1706,20 @@ vendor/firmware/ois_mcu_stm32g_fw.bin
 vendor/firmware/td4375_a23xq_boe.bin
 vendor/firmware/td4375_a23xq_tianma.bin
 
+# Touchscreen (Recovery Firmware)
+vendor/firmware/a619_gmu.bin:recovery/root/vendor/firmware/a619_gmu.bin
+vendor/firmware/a660_gmu.bin:recovery/root/vendor/firmware/a660_gmu.bin
+vendor/firmware/apnv11.bin:recovery/root/vendor/firmware/apnv11.bin
+vendor/firmware/crnv21.bin:recovery/root/vendor/firmware/crnv21.bin
+vendor/firmware/dax_param.bin:recovery/root/vendor/firmware/dax_param.bin
+vendor/firmware/lx891rs_a23xq_ltps.bin:recovery/root/vendor/firmware/lx891rs_a23xq_ltps.bin
+vendor/firmware/multical.bin:recovery/root/vendor/firmware/multical.bin
+vendor/firmware/nt36672_a23_csot.bin:recovery/root/vendor/firmware/nt36672_a23_csot.bin
+vendor/firmware/nt36672_a23_csot_mp.bin:recovery/root/vendor/firmware/nt36672_a23_csot_mp.bin
+vendor/firmware/ois_mcu_stm32g_fw.bin:recovery/root/vendor/firmware/ois_mcu_stm32g_fw.bin
+vendor/firmware/td4375_a23xq_boe.bin:recovery/root/vendor/firmware/td4375_a23xq_boe.bin
+vendor/firmware/td4375_a23xq_tianma.bin:recovery/root/vendor/firmware/td4375_a23xq_tianma.bin
+
 # TrustZone
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libGPreqcancel.so
