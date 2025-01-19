@@ -53,7 +53,6 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 $(call soong_config_set,rfs,mpss_firmware_symlink_target,firmware_modem)
 
 PRODUCT_PACKAGES += \
-    vendor_bt_firmware_mountpoint \
     vendor_dsp_mountpoint \
     vendor_firmware_mnt_mountpoint
 
