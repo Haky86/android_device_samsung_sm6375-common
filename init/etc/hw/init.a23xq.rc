@@ -46,7 +46,7 @@ on post-fs-data
     chmod 0660 /dev/mst_ctrl
 
 on boot
-    write /proc/sys/vm/swappiness 130
+    write /proc/sys/vm/swappiness 100
     write /sys/module/zram/parameters/zram_balance_ratio 30
 # remove resampling
     setprop ro.input.resampling 0
