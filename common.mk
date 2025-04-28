@@ -30,6 +30,9 @@ $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Display
+$(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,true)
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm6375)
 
