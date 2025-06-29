@@ -85,6 +85,7 @@ PRODUCT_PACKAGES += \
     vendor_modprobe.sh
 
 PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/init/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
     $(COMMON_PATH)/init/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 # Kernel
