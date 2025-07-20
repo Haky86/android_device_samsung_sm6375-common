@@ -77,5 +77,8 @@ TARGET_USES_HWC2 := true
 USE_OPENGL_RENDERER := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 
+# Hostapd
+WIFI_FEATURE_HOSTAPD_11AX := true
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
