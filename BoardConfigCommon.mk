@@ -80,5 +80,28 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 # Hostapd
 WIFI_FEATURE_HOSTAPD_11AX := true
 
+# Kernel
+BOARD_BOOT_HEADER_VERSION := 3
+BOARD_DTB_OFFSET := 0x01f00000
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_KERNEL_BASE := 0x00000000
+
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.memcg=1 androidboot.selinux=permissive androidboot.usbcontroller=a600000.dwc3 console=null firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 pm_levels.sleep_disabled=1 msm_rtb.filter=0x237 nokaslr printk.devkmsg=on service_locator.enable=1 swiotlb=1 video=vfb:640x400,bpp=32,memsize=3072000
+
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_KERNEL_TAGS_OFFSET := 0x01e00000
+BOARD_RAMDISK_OFFSET := 0x02000000
+BOARD_MKBOOTIMG_ARGS := --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION) --kernel_offset $(BOARD_KERNEL_OFFSET) --pagesize $(BOARD_KERNEL_PAGESIZE) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --ags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/samsung/sm6375
+TARGET_KERNEL_VERSION := 5.4
+
+# Kernel Modules
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
