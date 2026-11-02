@@ -200,5 +200,15 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(COMMON_PATH)/vintf/compatibility_matrix.device.xml
+
+DEVICE_MANIFEST_FILE := \
+    $(COMMON_PATH)/vintf/manifest.xml
+    
+DEVICE_MATRIX_FILE := \
+    $(COMMON_PATH)/vintf/compatibility_matrix.xml
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
