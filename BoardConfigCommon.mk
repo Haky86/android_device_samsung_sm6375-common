@@ -159,5 +159,11 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := holi
 
+# Properties
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Get non-open-source specific aspects
 include vendor/samsung/sm6375-common/BoardConfigVendor.mk
