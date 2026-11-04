@@ -111,6 +111,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    filename: "ueventd.rc",
+    name: "ueventd.qcom.rc",
+    src: "etc/ueventd.qcom.rc",
+}
+
+prebuilt_etc {
     name: "vendor.samsung.rilchip.qcom.rc",
     src: "etc/vendor.samsung.rilchip.qcom.rc",
     sub_dir: "init/",

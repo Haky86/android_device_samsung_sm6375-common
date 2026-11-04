@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
     init.vendor.onebinary.rc \
     init.vendor.rilcommon.rc \
     init.vendor.sysfw.rc \
+    ueventd.qcom.rc \
     vendor.samsung.rilchip.qcom.rc
 
 PRODUCT_PACKAGES += \
