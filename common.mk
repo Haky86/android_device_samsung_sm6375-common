@@ -42,6 +42,46 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(COMMON_PATH)/fastboot-info.txt
 # HWUI
 TARGET_USES_VULKAN := true
 
+# Init Scripts
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.a23xq.rc \
+    init.audio.samsung.rc \
+    init.nfc.samsung.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.samsung.bsp.rc \
+    init.samsung.display.rc \
+    init.samsung.power.rc \
+    init.samsung.rc \
+    init.target.rc \
+    init.vendor.onebinary.rc \
+    init.vendor.rilcommon.rc \
+    init.vendor.sysfw.rc \
+    vendor.samsung.rilchip.qcom.rc
+
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.crda.sh \
+    init.kernel.post_boot.sh \
+    init.kernel.post_boot-blair.sh \
+    init.kernel.post_boot-holi.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.early_init.sh \
+    init.qti.kernel.debug.sh \
+    init.qti.kernel.debug-blair.sh \
+    init.qti.kernel.debug-holi.sh \
+    qca6234-service.sh \
+    vendor_modprobe.sh
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
