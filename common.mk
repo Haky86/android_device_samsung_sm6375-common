@@ -38,6 +38,47 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.common-util.vendor \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    audio.primary.holi:32 \
+    audio.r_submix.default \
+    audio.usb.default \
+    liba2dpoffload \
+    libaudiofoundation \
+    libaudiopreprocessing \
+    libaudioroute \
+    libaudioutils \
+    libbatterylistener \
+    libbundlewrapper \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libldnhncr \
+    libreverbwrapper \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
+    libtinyalsa \
+    libtinycompress \
+    libvisualizer \
+    libvolumelistener \
+    tinycap \
+    tinymix \
+    tinypcminfo \
+    tinyplay
+
 # Audio (SoundTrigger)
 PRODUCT_PACKAGES += \
     sound_trigger.primary.holi:32
